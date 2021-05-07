@@ -7,7 +7,7 @@ Partitioning Around Medoids (PAM) Algorithm:
 This clustering model will help us in understanding the dataset as it produces “typical individual” for each cluster which becomes useful in our interpretation. In this clustering analysis, we have included all the variables in our dataset to find the similarities and dissimilarities in our dataset. As a first step, we have used the silhouette coefficient to give us the number of clusters our dataset must be clustered into.The silhouette coefficient shows the contrast in the average distance to elements in the cluster with the average distance to elements in other clusters. Objects with high silhouette coefficient value are considered to be well-clustered and objects with low silhouette value are usually outliers. From the below diagram, we can either choose silhouette coefficient value to be 2 or 3 as both contain the highest silhouette width. 
 Let’s choose k=2, as more clusters would either form overlapping subclusters or would include outliers and other noise in the dataset as shown in Appendix 3.1 . Therefore, this divides our dataset into 2 clusters. 
 
-[Silhouette-Width](/relative/path/to/img.jpg?raw=true "Silhoutte Width")
+[Silhouette-Width](/Silhouette-Width.png?raw=true "Silhoutte Width")
 
 Observations :
 On running the PAM algorithm on the dataset with k=2(silhouette coefficient), we derive the below clusters as depicted in the scatter plot. Clusters 1 and 2 are quite distinctive and spaced apart barring a few points, indicating relevancy of the clustering model.
