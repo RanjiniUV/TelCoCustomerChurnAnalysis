@@ -29,6 +29,7 @@ Whereas in Cluster 2, customers do not prefer internet services and this is just
 
 
 # To conclude, below are the following points that can be drawn from the above model.
-Cluster 1 has a high number of customers who are more likely to stay compared to Cluster 2. 
-It is very interesting to see that cluster 1 and 2 formation are very distinctive but don't shed much light on customer churning attribute(Target). 
+1. Cluster 1 has a high number of customers who are more likely to stay compared to Cluster 2.
+2. It is very interesting to see that cluster 1 and 2 formation are very distinctive but don't shed much light on customer churning attribute(Target). 
+3. This algorithm helps in identifying the customer segments and targetted approach by the company on these segments can improve the business and decrease the customer churn rate. 
 
