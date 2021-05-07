@@ -19,11 +19,8 @@ telco.df$Churn <- as.numeric(telco.df$Churn == "Yes")
 
 head(telco.df, n=3)
 
-###Applying kmediod algorithm
 
-
-
-####TRYING GOWER"S DISTANCE###########
+#Applying Gower's Distance
 install.packages("Rtsne")
 library(cluster)
 library(dplyr)
@@ -39,7 +36,7 @@ telco.df[which(gower_mat == max(gower_mat[gower_mat != max(gower_mat)]), arr.ind
 
 
 
-
+#Finding silhouette Width
 sil_width <- c(NA)
 for(i in 2:8){  
   pam_fit <- pam(gower_dist, diss = TRUE, k = i)  
@@ -52,6 +49,8 @@ plot(1:8, sil_width,
      ylab = "Silhouette Width")
 lines(1:8, sil_width)
 
+
+#Fitting the algorithm
 k <- 2
 pam_fit <- pam(gower_dist, diss = TRUE, k)
 str(pam_fit)
@@ -64,7 +63,6 @@ pam_results <- telco.df %>%
 pam_results$the_summary
 
 
-
 tsne_obj <- Rtsne(gower_dist, is_distance = TRUE)
 tsne_data <- tsne_obj$Y %>%
   data.frame() %>%
@@ -72,8 +70,6 @@ tsne_data <- tsne_obj$Y %>%
   mutate(cluster = factor(pam_fit$clustering))
 
 
-
-
-
+#Plotting the scatter plot to determine the clusters
 ggplot(aes(x = X, y = Y), data = tsne_data) +
   geom_point(aes(color = cluster))
