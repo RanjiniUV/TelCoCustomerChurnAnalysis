@@ -12,19 +12,19 @@ Let’s choose k=2, as more clusters would either form overlapping subclusters o
 Observations :
 On running the PAM algorithm on the dataset with k=2(silhouette coefficient), we derive the below clusters as depicted in the scatter plot. Clusters 1 and 2 are quite distinctive and spaced apart barring a few points, indicating relevancy of the clustering model.
 
-[Silhouette-Width](/relative/path/to/img.jpg?raw=true "Silhoutte Width")
+![Screenshot](/Images/ScatterPlot.png?raw=true "Scatter Plot"))
 
 From the summary scorecard below, the customers in cluster 1 have internet services. And they have much higher concentration in selecting ‘Month-to-month’ contract terms. 
-[Silhouette-Width](/relative/path/to/img.jpg?raw=true "Silhoutte Width")
-[Silhouette-Width](/relative/path/to/img.jpg?raw=true "Silhoutte Width")
+![Screenshot](/Images/Screenshot1.png?raw=true "Screenshot4"))
+![Screenshot](/Images/Screenshot2.png?raw=true "Screenshot4"))
 
 
 This is shown by “No Internet Services” = 0.
 
 Whereas in Cluster 2, customers do not prefer internet services and this is justified by the high count for “No Internet Services”. Further, Cluster 2 has low values for “DSL” and “Fiber optics” preference. Lastly, the majority of cluster 2 customers have one year or two year contracts. 
 
-[Silhouette-Width](/relative/path/to/img.jpg?raw=true "Silhoutte Width")
-[Silhouette-Width](/relative/path/to/img.jpg?raw=true "Silhoutte Width")
+![Screenshot](/Images/Screenshot3.png?raw=true "Screenshot3"))
+![Screenshot](/Images/Screenshot4.png?raw=true "Screenshot4"))
 
 
 
